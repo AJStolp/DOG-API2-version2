@@ -11,13 +11,14 @@ function getDogImage(){
 }
 
 function displayResults(responseJson) {
-    console.log(responseJson.message);
+    console.log(responseJson);
 
-    let img = responseJson.message.map(i => {
-        return `<img src="${i}" class="image-response">`;
-      })
-
-    $('.image-response').replaceWith(img)
+    let img = responseJson.message.reduce((acc, i) => {
+      acc = acc + `<img src="${i}" class="image-response /">`;
+      return acc;
+    }, '');
+  console.log(img);
+    $('#img').html(img)
     $('.results').removeClass('hidden');
 }
 
