@@ -14,7 +14,7 @@ function displayResults(responseJson) {
     console.log(responseJson);
 
     let img = responseJson.message.reduce((acc, i) => {
-      acc = acc + `<img src="${i}" class="image-response /">`;
+      acc = acc + `<img src="${i}" class="image-response"/>`;
       return acc;
     }, '');
   console.log(img);

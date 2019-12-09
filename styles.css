@@ -1,3 +1,23 @@
 .hidden {
     display: none;
 }
+main {
+    text-align: center;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.image-response {
+    padding: 10px 10px;
+}
+h1 {
+    color: blue;
+}
+form {
+    border: 2px solid lightblue;
+    max-width: 50%;
+    margin: auto;
+    padding: 8px 0;
+}
